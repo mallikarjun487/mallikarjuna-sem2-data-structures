@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	int arr[100],i,n;
+	int arr[10],i,n;
 	printf("enter the number of values :");
 	scanf("%d",&n);
 	for(i=0;i<=n;i++){
