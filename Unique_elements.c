@@ -25,7 +25,7 @@ int main()
         }
         if (ctr == 0)
         {
-            printf("%d ", arr1[i]);  // Print the unique element
+            printf("%d ", arr1[i]);
         }
     }
     printf("\n\n");
