@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #define Max 10
-
 int stack[Max];
 int top = -1;
-
 void push(int value) {
     if (top == Max - 1) {
         printf("Error: Stack overflow!\n");
@@ -13,7 +10,6 @@ void push(int value) {
     }
     stack[++top] = value;
 }
-
 int pop() {
     if (top == -1) {
         printf("Error: Stack underflow!\n");
@@ -21,15 +17,12 @@ int pop() {
     }
     return stack[top--];
 }
-
 int main() {
     int choice, value;
-
     while (1) {
         printf("1. Push\n2. Pop\n3. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
         switch (choice) {
             case 1:
                 printf("Enter value to push: ");
